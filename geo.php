@@ -39,22 +39,22 @@ class Geo {
 	
 	public function getContinentCode()
 	{
-		return $this->data['conintentCode'];
+		return $this->data['geoplugin_continentCode'];
 	}
 	
 	public function getLatitude()
 	{
-		return $this->data['latitude'];
+		return $this->data['geoplugin_latitude'];
 	}
 	
 	public function getLongitude()
 	{
-		return $this->data['longitude'];
+		return $this->data['geoplugin_longitude'];
 	}
 	
 	public function getCurrencyCode()
 	{
-		return $this->data['currencyCode'];
+		return $this->data['geoplugin_currencyCode'];
 	}
 	
 	public function __toString()
