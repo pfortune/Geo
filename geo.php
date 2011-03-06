@@ -8,10 +8,6 @@ class Geo {
 	public function __construct()
 	{
 		$this->ip = $_SERVER['REMOTE_ADDR'];
-	}
-	
-	public function locate()
-	{
 		$serialized_request = file_get_contents("http://www.geoplugin.net/php.gp?ip=$this->ip");
 		$this->data = unserialize($serialized_request);
 	}
